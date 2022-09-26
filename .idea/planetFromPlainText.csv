@@ -1,0 +1,7 @@
+class,subclasses
+By Composition,"['Terrestrial or Rocky Planets', 'Gas or Jovian Planets']"
+By Size,"['Small Planets', 'Giant Planets']"
+By their relative positioning to the sun,"['Inner Planets', 'Outer Planet']"
+By their relative position to the earth,"['Inferior Planets', 'Superior Planets']"
+Based on the time of discovery,"['Classical Planets', 'Modern Planets']"
+Based on their Mass,['Dwarf Planets']
