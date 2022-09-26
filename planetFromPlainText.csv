@@ -1,0 +1,7 @@
+class,subclasses
+ composition,"['Rocky Planets', 'Jovian Planets']"
+ size,"['Small Planets', 'Giant Planets']"
+  relative positioning to the sun,"['Inner Planets', 'Outer Planet']"
+  relative position to the earth,"['Inferior Planets', 'Superior Planets']"
+based on the time of discovery,"['Classical Planets', 'Modern Planets']"
+based on  mass,['Dwarf Planets']

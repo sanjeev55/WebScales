@@ -1,7 +1,8 @@
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
-
+from owlready2 import *
+import rdfpandas
 
 def scrapeWiki():
     pageWiki = requests.get("https://en.wikipedia.org/wiki/List_of_planet_types")
@@ -9,13 +10,11 @@ def scrapeWiki():
 
     # getting classes
     headingWiki = soupWiki.findAll('span', {'class': "mw-headline"})
-
     headingListWiki = []
 
     for i in headingWiki:
-        headingListWiki.append(i.get_text())
+        headingListWiki.append(i.get_text().replace("By", "").lower())
     del headingListWiki[4:]
-    # print(headingListWiki)
 
     # getting subclasses
     planetTableWiki = soupWiki.findAll('table', {'class': "wikitable"})
@@ -50,7 +49,7 @@ def scrapeLenAcademy():
     for i in planetHeading:
         textLine = i.get_text()
         if textLine.startswith("B"):
-            classList.append(textLine)
+            classList.append(textLine.replace("By", "").replace("their", "").lower())
 
     # print(classList)
 
@@ -61,7 +60,7 @@ def scrapeLenAcademy():
     for i in planetType:
         textLine = i.get_text()
         if "Planet" in textLine:
-            subClassList.append(textLine.replace(":", ""))
+            subClassList.append(textLine.replace(":", "").split(' or ')[-1])
     del subClassList[0]
     # print(subClassList)
 
@@ -77,16 +76,34 @@ def scrapeLenAcademy():
     # print(planetDf)
     planetDf.to_csv("planetFromPlainText.csv", index=False)
     return planetDf
-print(scrapeWiki())
-print(scrapeLenAcademy())
 
+
+# aggregating dataframe from two different links
 def dataAggregation():
+    planetType = {}
     planetWiki = scrapeWiki()
     planetLenAcademy = scrapeLenAcademy()
-    for indexWiki, rowWiki in planetWiki.iterrows():
-        print(rowWiki['class'].lower())
-        for indexLen, rowLen in planetLenAcademy.iterrows():
 
-            print(rowLen['class'].lower())
-        print("-------------")
+    # iterating over the dataframes
+    for indexWiki, rowWiki in planetWiki.iterrows():
+        for indexLen, rowLen in planetLenAcademy.iterrows():
+            wiki = rowWiki['class'].split()
+            lenAca = rowLen['class'].split()
+            # checking if similar classes exist in two dataframes; if yes then combining the list of subclasses
+            if any(x in wiki for x in lenAca):
+                planetSubclass = rowWiki['subclasses'] + rowLen['subclasses']
+                planetType.update({rowWiki['class']: planetSubclass})
+
+    # newdf with combined subclasses
+    newdf = pd.DataFrame(planetType.items(), columns=["class", "subclasses"])
+
+    # appending all the dataframes
+    concatdf = newdf.append(planetWiki.drop([0, 2]))
+    finaldf = concatdf.append(planetLenAcademy.drop([0, 5]))
+    print(finaldf)
+    finaldf.to_csv("FinalPlanetClassification.csv", index=False)
+    return finaldf
+
+
 dataAggregation()
+
