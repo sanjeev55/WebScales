@@ -1,0 +1,5 @@
+class,subclasses
+ mass regime,"['Giant planet', 'Ice giant', 'Mesoplanet', 'Mini-Neptune', 'Planetar', 'Super-Earth', 'Super-Jupiter', 'Sub-Earth']"
+ orbital regime,"['Circumbinary planet', 'Double planet', 'Eccentric Jupiter', 'Exoplanet', 'Extragalactic planet', 'Goldilocks planet', 'Hot Jupiter', 'Hot Neptune', 'Inferior planets', 'Inner planet', 'Outer planet', 'Pulsar planet', 'Rogue planet', 'Superior planets', 'Trojan planet']"
+ composition,"['Chthonian planet', 'Carbon planet', 'Coreless planet', 'Desert planet', 'Gas dwarf', 'Gas giant', 'Helium planet', 'Hycean planet', 'Ice giant', 'Ice planet', 'Iron planet', 'Lava planet', 'Ocean planet', 'Protoplanet', 'Puffy planet', 'Silicate planet', 'Terrestrial planet']"
+other types,"['Classical planets', 'Earth analog', 'Hypothetical planet', 'Toroidal planet']"

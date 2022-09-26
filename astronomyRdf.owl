@@ -1,0 +1,3115 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://visualdataweb.org/SpaceScience/"
+     xml:base="http://visualdataweb.org/SpaceScience/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://visualdataweb.org/SpaceScience/">
+        <dc:creator>Sanjeev Sun Shakya</dc:creator>
+        <dc:description xml:lang="en">Space Science Knowledge Graph</dc:description>
+        <dc:title xml:lang="en">Space Science</dc:title>
+        <owl:versionInfo xml:lang="en">1.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Active -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Active">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Normal"/>
+        <rdfs:comment>Definition: In an active galaxy, its supermassive black hole is accreting material from the galaxy&apos;s dense central region.
+
+Source: https://imagine.gsfc.nasa.gov/science/objects/active_galaxies1.html#:~:text=Most%2C%20if%20not%20all%2C%20normal,and%20form%20into%20a%20disk.
+
+Justification: Classification of active galaxies is difficult, historically contingent, and subject to change, and recent work indicates that at least some classes of
+active galaxies may be one and the same kind of object viewed at different angles from Earth. On the principle that physical nature rather than accidental viewing angle from Earth should be one of the chief criteria for class status, if such a “unified theory” of active galaxies is demonstrated.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Advanced -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Advanced">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Interacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Alidade -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Alidade">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definition: a device that allows one to sight a distant object and use the line of sight to perform a task
+
+Source: https://en.wikipedia.org/wiki/Alidade</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Anomalous_Cosmic_Ray -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Anomalous_Cosmic_Ray">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Energetic_Particles"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Solar_Wind"/>
+        <rdfs:seeAlso>Definitions: Anomalous cosmic rays (ACRs) are energetic particles of interstellar
+origin that travel into the Solar System near the speed of light.
+They have energies of about one thousand electron volts (one KeV,
+ten times the solar wind energies) to 350 million electron volts
+(350 MeV).
+
+Source: Classifying the Cosmos (Book)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Armillary_sphere -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Armillary_sphere">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definition: An armillary sphere (variations are known as spherical astrolabe, armilla, or armil) is a model of objects in the sky (on the celestial sphere), consisting of a spherical framework of rings, centered on Earth or the Sun, that represent lines of celestial longitude and latitude and other astronomically important features, such as the ecliptic.
+
+Source: https://en.wikipedia.org/wiki/Armillary_sphere</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Association -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Association">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+        <rdfs:comment>Definition: An association of stars is a group of tens to hundreds of young
+stars that are close together because they were formed from the
+same giant molecular cloud.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Asteroid -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Asteroid">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Small_Bodies_of_Solar_System"/>
+        <rdfs:comment>Definition: A minor planet is one class of small rocky bodies of the Solar
+System orbiting the Sun, as distinct from the classes of major planets
+, dwarf planets, and satellites. Also known
+as asteroids, they are distinguished from comets and other
+small bodies of the Solar System such as trans-Neptunian objects
+, as defined by the International Astronomical Union in
+2006. They range in size from about 600 miles in diameter down
+to pebbles.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Asteroid_Groups -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Asteroid_Groups">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Systems"/>
+        <rdfs:comment>Definition: Asteroid groups are populations of minor planets with
+similar orbits, probably related to their origins. While the terms
+“minor planet” and “asteroid” are technically interchangeable for
+individual objects, for historical reasons the latter term in practice
+is usually used for groups, including the main asteroid belt
+located between Mars and Jupiter.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Astrolabe -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Astrolabe">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definitions: It is an ancient astronomical instrument that was a handheld model of the universe
+
+Source: https://en.wikipedia.org/wiki/Astrolabe</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Astrometric -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Astrometric">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Binary"/>
+        <rdfs:comment>Definition: distinguished by positional changes
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Astronomical_Instruments -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Astronomical_Instruments">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomy"/>
+        <rdfs:comment>Definition: An astronomical instrument generally refers to a type of equipment used for the study, observation, or measurement of celestial objects.
+
+Source: https://www.allthescience.org/what-are-the-different-types-of-astronomical-instruments.htm
+
+Justification: Instruments used to study astromony based where it is used either earth or outer space.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Astronomical_Objects -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Astronomical_Objects">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomy"/>
+        <rdfs:comment>Category: An astronomical object or celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe.
+
+Source: https://en.wikipedia.org/wiki/Astronomical_object
+
+Justification: Classifciation based on the gravity as gravity is the determining factor for the structure and organization of planets, stars, and galaxies, their families, and classes of objects.
+
+Gravity is the dominant force at work in astronomical protosystems, as planets, stars, and galaxies form—by different mechanisms to be sure, but all subject to the laws of gravity as delineated by Newton.</rdfs:comment>
+        <rdfs:label xml:lang="en">Astronomical Objects</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Astronomical_Objects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Astronomical_Phenomena -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Astronomical_Phenomena">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomy"/>
+        <rdfs:comment>Category: Aggregates of matter in outer space, such as stars, planets, comets, etc. and the properties and processes they undergo.
+
+Source: https://www.definitions.net/definition/astronomical+phenomena#:~:text=Library%20of%20Medicine-,Astronomical%20Phenomena,properties%20and%20processes%20they%20undergo.
+
+Justification: Classification based on where it occurs, either within the solar system or outside the solar system</rdfs:comment>
+        <rdfs:label xml:lang="en">Astronomical Phenomena</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Astronomical_Phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Astronomy -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Astronomy">
+        <rdfs:label xml:lang="en">Astronomy</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Astronomy</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Space_Science</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Aurora -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Aurora">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Single_Objects"/>
+        <rdfs:comment>Definition: An aurora, also commonly known as the polar lights, is a natural light display in Earth&apos;s sky, predominantly seen in high-latitude regions (around the Arctic and Antarctic). Auroras display dynamic patterns of brilliant lights that appear as curtains, rays, spirals, or dynamic flickers covering the entire sky.
+
+Source: https://en.wikipedia.org/wiki/Aurora
+
+Justification: Classification based on the where it is observed from Earth.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aurora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Aurora_australis -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Aurora_australis">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Aurora"/>
+        <rdfs:comment>Definition: It is observed from the Southern part of Earth</rdfs:comment>
+        <rdfs:label xml:lang="en">Aurora australis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Aurora_borealis -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Aurora_borealis">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Aurora"/>
+        <rdfs:comment>Definition: Definition: It is observed from the Northern part of Earth</rdfs:comment>
+        <rdfs:label xml:lang="en">Aurora borealis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Binary -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Binary">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+        <rdfs:comment>Definition: Binary stars are two stars that are
+gravitationally bound in a mutual orbit. They are sometimes also
+termed double stars, but that designation may also include stars
+that only appear close together in the sky.
+
+Source: Classifying the Cosmos (Book)
+
+Justification: Classification based on method of observation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Black_Hole -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Black_Hole">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Evolutionary_Endpoints"/>
+        <rdfs:comment>Definition: A black hole is an infinitely dense region of space with a gravitational
+field so intense that even light cannot escape.
+
+Source: Classifying the Cosmos (Book)
+
+Justification: Classification based on the their masses relative to the Sun.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Blazar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Blazar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Active"/>
+        <rdfs:comment>Definition: Blazars are active galactic nuclei viewed head-on, made visible by
+their relativistic jets pointed directly at us. They vary frequently,
+erratically, and rapidly at an array of wavelengths, with their
+luminosity fluctuating by more than ten times, and by 10 to 50%
+in only a few hours.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Blink_comparator -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Blink_comparator">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definitions: A blink comparator is a viewing apparatus formerly used by astronomers to find differences between two photographs of the night sky.
+
+Source: https://en.wikipedia.org/wiki/Blink_comparator</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Bolometer -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Bolometer">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Recording"/>
+        <rdfs:comment>Definition: A bolometer is a device for measuring radiant heat by means of a material having a temperature-dependent electrical resistance.
+
+Source: https://en.wikipedia.org/wiki/Bolometer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Bright_Giant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Bright_Giant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Post-Main_Sequence"/>
+        <rdfs:comment>Definition: Bright giants are luminosity class II stars intermediate between
+giant  and supergiant  stars, according to the MK Yerkes
+classification. Of the five classes delineated in that system, bright
+giants are in some ways the least distinct, since they are brighter
+than the giants of class III but in a similar state of evolution, having
+exhausted their core hydrogen and started or nearly started to
+undergo helium fusion.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Brown_Dwarf -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Brown_Dwarf">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Substellar"/>
+        <rdfs:comment>Definition: Brown dwarfs are objects intermediate in mass between planets
+and stars, too large to have formed as planets, too small to sustain
+hydrogen fusion.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/CRM_Regular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/CRM_Regular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/CR_Many_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior known with concavities.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/CR_Many_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/CR_Many_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/C_Regular_Spinning"/>
+        <rdfs:comment>Definition: Objects that are composed of multiple material. 
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/CSMR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/CSMR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/CSM_Regular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/CSM_Regular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/CSM_Regular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/CS_Many_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior known with concavities.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/CS_Many_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/CS_Many_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/C_Stable"/>
+        <rdfs:comment>Definition: Objects that are composed of multiple material. 
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/CUMR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/CUMR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/CRM_Regular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/C_Regular_Spinning -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/C_Regular_Spinning">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Controlled_Orbit"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/C_Stable"/>
+        <rdfs:comment>Definition: Objects that are spinning normally.
+
+Justification: Classification based on the number of material used to build the instrument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/C_Stable -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/C_Stable">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Controlled_Orbit"/>
+        <rdfs:comment>Definition: Objects that are stationary and stable
+
+Justification: Classification based on the number of material used to build the instrument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Celatone -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Celatone">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Recording"/>
+        <rdfs:comment>Definition: The celatone was a device invented by Galileo Galilei to observe Jupiter&apos;s moons with the purpose of finding longitude on Earth.
+
+Source: https://en.wikipedia.org/wiki/Celatone</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Celestial_sphere -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Celestial_sphere">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definition: the celestial sphere is an abstract sphere that has an arbitrarily large radius and is concentric to Earth.
+
+Source: https://en.wikipedia.org/wiki/Celestial_sphere</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Circumgalactic -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Circumgalactic">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+        <rdfs:comment>Definition: Surrounding or occurring in the vicinity of a Galaxy
+
+Justification: Classification based on the contituents of the object</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Circumplanetary -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Circumplanetary">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+        <rdfs:comment>Definitions: Surrounding or occurring in the vicinity of a Planet
+
+Source: https://www.merriam-webster.com/dictionary/circumplanetary#:~:text=Definition%20of%20circumplanetary,to%20a%20planet%20circumplanetary%20space
+
+Justification: Classification based on the object&apos;s constituents and physical property.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Circumstellar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Circumstellar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        <rdfs:comment>Definition: Surrounding or occurring in the vicinity of a star
+
+Source: https://www.merriam-webster.com/dictionary/circumstellar
+
+Justification: Classification based on how the object is formed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Class_I -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Class_I">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Seyfert"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Class_II"/>
+        <rdfs:comment>Definition: Seyfert I galaxies exhibit both narrow and broad emission lines and are believed to be young AGNs accreting mass. They show extreme variability
+compared to Seyfert II types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Class_II -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Class_II">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Seyfert"/>
+        <rdfs:comment>Definition: Class II exhibits only narrow emission lines, probably because
+of its 51-degree tilt to our line of sight.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Classical_KBOs -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Classical_KBOs">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kuiper_Belt"/>
+        <rdfs:comment>Definition: composing about two-thirds of the objects
+known at that time, have small eccentricities and semi-major
+axes between 41 and 46 astronomical units.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Classical_T_Tauri_stars -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Classical_T_Tauri_stars">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/T-Tauri"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Weak_T_Tauri_stars"/>
+        <rdfs:comment>Definition: Stars with extensive disks resulting in strong emission lines
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Comet -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Comet">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Small_Bodies_of_Solar_System"/>
+        <rdfs:comment>Definition: Comets are known to be small
+objects formed in the outer Solar System with nuclei composed of
+ice, rock, and dust, interspersed with frozen gases and other volatiles
+that sublimate (vaporize) as the comet enters the inner Solar
+System, producing a coma and sometimes a spectacular tail. Their
+nuclei typically range in size from 100 meters to 50 km.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Conjunction -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Conjunction">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Multiple_Objects"/>
+        <rdfs:comment>Definition: In astronomy, a conjunction occurs when two astronomical objects or spacecraft have either the same right ascension or the same ecliptic longitude, usually as observed from Earth.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Controlled_Orbit -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Controlled_Orbit">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Outer_Space"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UnControlled_Orbit"/>
+        <rdfs:comment>Definition: Objects whose movement around the orbit is controlled. 
+
+Source: https://amostech.com/TechnicalPapers/2013/Orbital_Debris/JAH.pdf
+
+Justification: Classification is based on the attitude state, i.e, how the attiute of the object is evolving ober time, is it actively stabilized, naturally stable, spinning mderately around one axis or spinning in irregular manner.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Cool_Atomic_Cloud -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Cool_Atomic_Cloud">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Gas"/>
+        <rdfs:comment>Definition: composed mainly of cold neutral hydrogen (H I)
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Core_Collapse_Supernova_Remnant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Core_Collapse_Supernova_Remnant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: A supernova remnant is the remains of material
+ejected during the explosion of a supernova (S 11), a process
+that seeds the interstellar medium with heavy elements.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Dark_Nebulae -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Dark_Nebulae">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Dust"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Reflection_Nebulae"/>
+        <rdfs:comment>Definition: A dark nebula, also called an absorption nebula because the gas
+component absorbs most or all of the light from the hotter star
+or emission nebula behind it, is composed largely of interstellar
+dust interspersed with gas.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Debris_disk -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Debris_disk">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: Debris disks are residual materials observed around stars in the
+form of a flattened disk after planet formation has taken place. As
+such, this class is distinguished from protoplanetary disks, such as
+proplyds that exist before planet formation, and from circumstellar
+shells formed by mass loss from stars later in stellar
+evolution.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Dioptra -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Dioptra">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definition: It is a classical astronomical and surveying instrument, dating from the 3rd century BC. 
+
+Source: https://en.wikipedia.org/wiki/Dioptra</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Dust -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Dust">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Interplanetary_Medium"/>
+        <rdfs:comment>Definition: Interplanetary dust (IDP), sometimes called cosmic dust, consists
+of particles ranging in diameter from 10 to 200 micrometers—
+about the width of a single human hair.
+In contrast to interplanetary gas, which is the local interstellar
+medium the Solar System happens to be passing through,
+most IDPs originate in the Solar System itself.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Dwarf -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Dwarf">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Main_Sequence"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Subdwarf"/>
+        <rdfs:comment>Definition: Dwarf are those stars in their
+core hydrogen-burning stage, so called because they form a clear
+band or “sequence” of stars when stellar absolute magnitudes or
+luminosities are plotted against stellar surface temperatures.
+
+Source:Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Dwarf_Planet -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Dwarf_Planet">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Subplanetary"/>
+        <rdfs:comment>Definition: Dwarf planet as defined by the IAU orbits the Sun, is massive
+enough to be rounded by its own gravity, is not a satellite, and
+has not cleared its orbit of other materials.
+
+Source: Classifying the cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Early -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Early">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Interacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Earth_Instrument -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Earth_Instrument">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Instruments"/>
+        <rdfs:comment>Definition: Instruments used from earth to study Astronomy
+
+Justification: Classification based on the scope of use i.e either for Obersvational use or for recording.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Ecplise -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Ecplise">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Multiple_Objects"/>
+        <rdfs:comment>Definition: An eclipse is an astronomical event that occurs when an astronomical object or spacecraft is temporarily obscured, by passing into the shadow of another body or by having another body pass between it and the viewer.
+In most calendar years there are two lunar eclipses; in some years one or three or none occur. Solar eclipses occur two to five times a year, five being exceptional; there last were five in 1935, and there will not be five again until 2206. 
+
+Source: https://en.wikipedia.org/wiki/Eclipse#:~:text=An%20eclipse%20is%20an%20astronomical,is%20known%20as%20a%20syzygy.
+
+Justification: Classification based on the position of sun moon and earth.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ecplises</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Ecplises</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Elliptical -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Elliptical">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Normal"/>
+        <rdfs:comment>Definition: elliptical galaxies are almost featureless aggregations of stars distinguished by an ellipsoidal or spherical morphology.
+
+Justification: Classification based on Luminosity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Energetic_Particles -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Energetic_Particles">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Interplanetary_Medium"/>
+        <rdfs:comment>Definition: Particles ranging in energy from just above solar wind, ≳1 keV, to galactic cosmic rays of many GeV or greater are observed to be always present in the interplanetary medium. These suprathermal particles appear to come from many different sources: among them the galaxy and nearby interstellar medium, the Sun, planetary magnetospheres and bow shock waves.
+
+Source: https://link.springer.com/article/10.1007/BF00149816
+
+Justification: Classfication based on the origin of the particles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Equatorium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Equatorium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Recording"/>
+        <rdfs:comment>Definitions: It can be used for finding the positions of the Moon, Sun, and planets without arithmetic operations, using a geometrical model to represent the position of a given celestial body.
+
+Source: https://en.wikipedia.org/wiki/Equatorium</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Evolutionary_Endpoints -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Evolutionary_Endpoints">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star"/>
+        <rdfs:comment>Definition: The points at which the life cycle of a star ends. 
+
+Justification: Classification based on their masses or the Chandrasekhar limit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Extra_Solar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Extra_Solar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Phenomena"/>
+        <rdfs:comment>Definition: Phenomena occurring outside our solar system.
+
+Justification: Classification based on astronomical objects involved.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Extragalactic_Cosmic_Rays -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Extragalactic_Cosmic_Rays">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Energetic_Particles"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Galactic_Wind"/>
+        <rdfs:comment>Definition: Extragalactic cosmic rays (ECRs) are ultra-high energy particles,
+thought to originate in active galactic nuclei, in star-forming galaxies,
+and from sources still unknown.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Binary -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Binary">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+        <rdfs:comment>Definition: A binary galaxy, sometimes called a double galaxy, consists of two galaxies either orbiting one another in bound orbits or involved in close encounters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Cluster -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Cluster">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+        <rdfs:comment>Definition: A cluster of galaxies is a gravitationally bound aggregation of galaxies
+intermediate in size between a Galaxy Group (G 21) and a
+Supercluster (G 23). Galaxy clusters are given the name of the constellation
+in which they are found, and typically contain between
+50 and 1,000 galaxies, though some may contain up to 2,000 galaxies.
+
+Justification: Classification based on structure of its core.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Dust -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Dust">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Intergalactic_Medium"/>
+        <rdfs:comment>Definition: Intergalactic dust
+consists of small particles found between galaxies, believed to originate
+in dying stars and driven out of galaxies, along with gas, by
+stellar and galactic winds (S 29 and G 17) as well as radiation pressure.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Energetic_Particles -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Energetic_Particles">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Intergalactic_Medium"/>
+        <rdfs:comment>Definition: Definition: In the physical sciences, a particle (or corpuscule in older texts) is a small localized object to which can be ascribed several physical or chemical properties, such as volume, density, or mass.
+
+Source: https://en.wikipedia.org/wiki/Particle#:~:text=In%20the%20physical%20sciences%2C%20a,volume%2C%20density%2C%20or%20mass.
+
+Justification: Classification based on origin of the Particles</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Gas -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Gas">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Intergalactic_Medium"/>
+        <rdfs:comment>Definition: Intergalactic gas is a hot, highly rarefied
+plasma consisting primarily of ionized hydrogen, along with
+traces of other elements such as helium and oxygen.
+
+Justification: Classification based on the temperature of the Gas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Group -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Group">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+        <rdfs:comment>Definition: Beyond binary galaxies (G 19), a galaxy
+group has usually been considered a collection of between
+three and 50 gravitationally bound galaxies spanning less than 10
+million light years.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Interacting -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Interacting">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+        <rdfs:comment>Definition: Interacting galaxies are two or more galaxies substantially disturbing
+each other due to mutual gravitational attraction. Interactions
+range from minor disturbances, such as a disruption of spiral arms,
+to full-on galaxy collisions.
+
+Justification: Classification based on the stage of interaction the galaxies currently are.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Supercluster -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Supercluster">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+        <rdfs:comment>Definition: Through the relentless reach of gravitation, clusters of galaxies
+may form superclusters spanning a hundred million light years or
+more, ten times more extensive than clusters (G 22). Like clusters,
+superclusters are distinguished by their gravitational interaction
+at these much larger scales, which tends to pull them together,
+overcoming some of the Hubble flow due to the expansion of the
+universe.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galactic_Cosmic_Rays -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Cosmic_Rays">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Energetic_Particles"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Stellar_Wind"/>
+        <rdfs:comment>Definition: Galactic cosmic rays (GCRs) are energetic particles with energies
+ranging from about 100 MeV to ten GeV (108 to 1010 electron volts)
+and more, corresponding respectively to 43% and 99.6% of the
+speed of light for protons.
+Galactic cosmic rays are believed to originate within our own Galaxy in the expanding shockwaves of supernovae explosions
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galactic_Halo -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Halo">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumgalactic"/>
+        <rdfs:comment>Definition: A halo is a slightly flattened spherical population of stars, globular
+clusters (S 35), and diffuse ionized gas surrounding disk galaxies,
+including spirals (G 4) and lenticulars (G 3), as well as some types
+of massive elliptical galaxies</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galactic_Jet -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Jet">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumgalactic"/>
+        <rdfs:comment>Definition: Galactic jets are energetic emissions of matter associated with
+supermassive black holes in the nuclei of active galaxies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galactic_Ring -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Ring">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumgalactic"/>
+        <rdfs:comment>Definition: Just as satellites orbit planets and planets orbit stars, so do galaxies
+have their own satellites and circumgalactic material orbiting them, notably in the form of smaller galaxies or their shredded debris known as rings or stellar streams.
+Like planetary rings and stellar disks and shells, galaxies show a variety of ring structures associated with the merger of galaxies and the formation of galactic halos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galactic_Wind -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Wind">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Energetic_Particles"/>
+        <rdfs:comment>Definition: Galactic winds are streams of charged particles, gas and dust that
+blow off galaxies, analogous to solar wind (P 16) and stellar wind
+(S 29), creating filaments and bubbles of multi-million-degree gas
+clouds that may extend tens of thousands of light years from the
+galaxies themselves.
+Galactic winds are believed to originate with massive
+stars, supernovae, and the black holes of active galactic nuclei.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galaxy -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galaxy">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+        <rdfs:comment>Definition: A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter.
+
+Source: https://en.wikipedia.org/wiki/Galaxy
+
+Justification: Classfication based on the position of supermassive black hole in the galaxy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galaxy_Merger -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galaxy_Merger">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Involving_Galaxies"/>
+        <rdfs:comment>Definition: Galaxy mergers can occur when two (or more) galaxies collide. They are the most violent type of galaxy interaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Galaxy_Systems -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Galaxy_Systems">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+        <rdfs:comment>Definition: Definition: A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.
+
+Source: https://en.wikipedia.org/wiki/System
+
+Justification: Classification based on the amount of galaxies involved and gravitational interaction among  the galaxies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Gas -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Gas">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Interplanetary_Medium"/>
+        <rdfs:comment>Definition: Interplanetary gas is a rarefied neutral gas flowing through
+the Solar System at a speed of about 25 km/sec.
+Interplanetary gas is thus a rarefied interstellar wind that differs
+from the much denser solar wind, which is composed of energetic
+charged particles emanating from the Sun at very high speeds.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Giant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Giant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Post-Main_Sequence"/>
+        <rdfs:comment>Definition: Giant stars are those stars that have ceased their core hydrogen
+burning and left the main sequence on the HR diagram. Giants have masses up to five times, and luminosities hundreds of times, that of the Sun.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Globular_Cluster -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Globular_Cluster">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+        <rdfs:comment>Definition: If open stars clusters are analogous to young towns, globular clusters
+are its large cities. Named for their spherical appearance, “globulars” are concentrations of tens of thousands to millions of stars.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Herbig-Haro_Object -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Herbig-Haro_Object">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: Herbig-Haro Objects are small bright patches of nebulosity formed
+when the gas from a stellar jet (S 20) collides with gas in the interstellar
+medium.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/High_Luminosity -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/High_Luminosity">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Elliptical"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Low_Luminosity"/>
+        <rdfs:comment>Definition: Has comparetively higher luminosity
+
+Justification: Classification based on presence of nuclear core.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/High_Surface_Brightness -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/High_Surface_Brightness">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Low_Luminosity"/>
+        <rdfs:comment>Definition: Has higher surface brightness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Hot_Ionized_Cloud -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Hot_Ionized_Cloud">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Gas"/>
+        <rdfs:comment>Definition: Unlike H I regions consisting of cold neutral hydrogen (S 23), H
+II regions are clouds of hot ionized hydrogen where the electrons
+have become separated from their parent protons through the
+absorption of ultraviolet photons from a nearby star.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Hypergiant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Hypergiant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Post-Main_Sequence"/>
+        <rdfs:comment>Definition: A hypergiant (luminosity class 0 or Ia+) is a very rare type of star that has an extremely high luminosity, mass, size and mass loss because of its extreme stellar winds.
+
+Source: https://en.wikipedia.org/wiki/Hypergiant</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Interferometer -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Interferometer">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Recording"/>
+        <rdfs:comment>Definition: The interferometer is a type of astronomical instrument that can help determine the size of a celestial object. These instruments collect data on the interference pattern of the phenomenon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Intergalactic_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Intergalactic_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+        <rdfs:comment>Definition: The space between galaxies is emptier than the best vacuum we can make in the lab. However, when viewed from a grand astronomical perspective, the small amount of matter adds up to make the “intergalactic medium”. This tenuous gas is extremely hot, and contains matter swept out of galaxies by star formation, black holes, interactions between galaxies, and possibly other phenomena which we have yet to discover.
+
+Source: https://www.cfa.harvard.edu/research/topic/intergalactic-medium
+
+Justification: Classification based on the type of matter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Intermediate -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Intermediate">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Interacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Intermediate_Black_Hole -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Intermediate_Black_Hole">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Black_Hole"/>
+        <rdfs:comment>Definition: Few thousand solar masses, found at the centers
+of globular clusters, S 35
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Interplanetary_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Interplanetary_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+        <rdfs:comment>Definition: The interplanetary medium (IPM) or interplanetary space consists of the mass and energy which fills the Solar System, and through which all the larger Solar System bodies, such as planets, dwarf planets, asteroids, and comets, move. The IPM stops at the heliopause, outside of which the interstellar medium begins.
+
+Source:https://en.wikipedia.org/wiki/Interplanetary_medium#:~:text=The%20interplanetary%20medium%20(IPM)%20or,which%20the%20interstellar%20medium%20begins.
+
+Justification: Classification based on the type of the matter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Interstellar_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Interstellar_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        <rdfs:comment>Definition: In astronomy, the interstellar medium is the matter and radiation that exist in the space between the star systems in a galaxy.
+
+Source: https://en.wikipedia.org/wiki/Interstellar_medium#:~:text=In%20astronomy%2C%20the%20interstellar%20medium,into%20the%20surrounding%20intergalactic%20space.
+
+Justification: Classification based on the type of matter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Involving_Galaxies -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Involving_Galaxies">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Extra_Solar"/>
+        <rdfs:comment>Definition: Astronomical phenomenas outside our solar system involving Galaxies.
+
+Justification: Classificaiton based on the manner in which the event occur</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Involving_Stars -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Involving_Stars">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Extra_Solar"/>
+        <rdfs:comment>Definition: Astronomical phenomenas outside our solar system involving Stars.
+
+Justification: Classification based on the manner in which the event occurs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Irregular_Cluster -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Irregular_Cluster">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Cluster"/>
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Normal"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Regular_Cluster"/>
+        <rdfs:comment>Definition: Irregular clusters have no well-defined center and often include all galaxy types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Objects"/>
+        <rdfs:comment>Definition: With the Kingdom of the Galaxies we enter a realm not recognized
+until a century ago, when certain “nebulae” thought to be within
+our own Galaxy were found to be extremely distant “extragalactic”
+systems of stars—galaxies in their own right. This relatively
+new Kingdom encompasses both previous Kingdoms, harboring
+stars and planets, clustering into systems and hierarchies of systems
+more readily than even stellar systems.
+
+Source: Classfiying the Cosmos by Steven J. Dick (Book)
+
+Justification: Classification based on the Galaxy’s origin(Proto-), location (Circum- and Inter-), subsidiary status (Sub-) and tendency to form systems (Systems). Subclasses are delineated by the various manifestations of the gravitational force acting on astronomical objects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Kingdom_of_Planets -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Objects"/>
+        <rdfs:comment>Definition: The Kingdom of the Planets is the realm of astronomy most familiar
+in popular culture. This largely has to do with the fact that its
+objects are closest to our home planet and thus are most easily
+observable both from the ground and—uniquely among the Three
+Kingdoms—from in situ spacecraft.
+
+Source: Classfiying the Cosmos by Steven J. Dick (Book)
+
+Justification: Classification based on the Planet’s origin(Proto-), location (Circum- and Inter-), subsidiary status (Sub-) and tendency to form systems (Systems).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Kingdom_of_Stars -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Objects"/>
+        <rdfs:comment>Defintion:With the Kingdom of the Stars we enter a more distant realm,
+where gaseous rather than solid objects reign, and with additional
+physics from the hydrostatics laws dominating the planets.
+Gravity and hydrostatics are still our constant companions, but
+here they work their will in different ways.
+
+Source: Classfiying the Cosmos by Steven J. Dick (Book)
+
+Justification: Classification based on the Star’s origin(Proto-), location (Circum- and Inter-), subsidiary status (Sub-) and tendency to form systems (Systems).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Kuiper_Belt -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Kuiper_Belt">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Trans-Neptunian_Systems"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Oort_Cloud"/>
+        <rdfs:comment>Definition: Kuiper belt objects (KBOs) include those trans-Neptunian objects
+(P 13) that reside in stable orbits around the Sun in the space
+extending from 30 to approximately 55 astronomical units (AU)
+from the Sun, as well as those less dynamically stable objects
+known as scattered-disk objects that may extend as far as 2,000
+AU.
+
+Source: Classifying the Cosmos (Book)
+
+Justification: Classification based on their orbital characteristics.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Lenticular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Lenticular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Normal"/>
+        <rdfs:comment>Definition: Lenticular galaxies are gravitationally bound conglomerations of
+stars with a rotating disk and a central bulge, but no spiral arms or
+dust lanes. In many ways they are intermediate in nature between
+elliptical and spiral galaxies, devoid of gas and dust like ellipticals
+but with some structure like spirals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Libration -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Libration">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Single_Objects"/>
+        <rdfs:comment>Definition: libration is the wagging or wavering of the Moon perceived by Earth-bound observers and caused by changes in their perspective. It permits an observer to see slightly different hemispheres of the surface at different times.</rdfs:comment>
+        <rdfs:label xml:lang="en">Libration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Low_Luminosity -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Low_Luminosity">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Elliptical"/>
+        <rdfs:comment>Definition: Has lower luminosity
+
+Justification: Classification based on surface brightness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Low_Surface_Brightness -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Low_Surface_Brightness">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Low_Luminosity"/>
+        <rdfs:comment>Definition: Has low surface brightness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Lunar_Eclipse -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Lunar_Eclipse">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Ecplise"/>
+        <rdfs:comment>Definition: Solar eclipses can only occur during a New Moon when the Moon moves between Earth and the Sun, and the three celestial bodies form a straight line: Earth–Moon–Sun.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lunar Eclipse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Lyman_alpha_blobs -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Lyman_alpha_blobs">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Gas"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Warm_Hot_IGM"/>
+        <rdfs:comment>Definition: Lyman alpha blobs are large concentrations of hydrogen gas in the
+intergalactic medium (IGM), spanning several hundred thousand
+light years and emitting light at the “Lyman alpha” wavelength
+produced when electrons recombine with ionized hydrogen.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Main_Sequence -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Main_Sequence">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star"/>
+        <rdfs:comment>Definition: A main sequence star is any star that has a hot, dense core which fuses hydrogen into helium to produce energy. 
+
+Source: https://study.com/academy/lesson/main-sequence-star-definition-facts-quiz.html#:~:text=Lesson%20Summary-,What%20is%20a%20Main%20Sequence%20Star%3F,Tau%20Ceti%20and%20the%20Sun.
+
+Justification: Classification based on the luminosities of the star.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Meteor_Shower -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Meteor_Shower">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Single_Objects"/>
+        <rdfs:comment>Definition: A meteor shower is a celestial event in which a number of meteors are observed to radiate, or originate, from one point in the night sky called Radiant. These meteors are caused by streams of cosmic debris called meteoroids entering Earth&apos;s atmosphere at extremely high speeds on parallel trajectories.
+
+Source: https://www.amsmeteors.org/meteor-showers/meteor-shower-calendar/#:~:text=A%20meteor%20shower%20is%20a,high%20speeds%20on%20parallel%20trajectories.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Meteoroid -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Meteoroid">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Subplanetary"/>
+        <rdfs:comment>Definition: Meteoroids are debris particles ranging in size from grains of sand
+to boulders traveling in solar orbits that may occasionally intersect
+the orbit of the Earth
+
+Source: Classifying the cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Meteroid_streams -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Meteroid_streams">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Systems"/>
+        <rdfs:comment>Definition: A meteoroid stream is a collection of meteoroids believed
+to be shed from a short-period comet during its perihelion
+passage, or from an Earth-crossing asteroid.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Mirror_lens -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Mirror_lens">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Telescope"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Molecular_Cloud -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Molecular_Cloud">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Gas"/>
+        <rdfs:comment>Definition: A molecular cloud is an interstellar gas cloud dense enough to permit
+formation of molecules, mostly hydrogen (H2) but also laced
+with more complex molecules
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Multiple_Objects -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Multiple_Objects">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Solar"/>
+        <rdfs:comment>Definition: Astronomical phenomenas within our solar system involving multiple objects
+
+Justification: Classification based on the manner in which the event occur.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Multiple_Star -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Multiple_Star">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+        <rdfs:comment>Definition: Multiple stars are gravitationally bound systems with three or
+more stars. Although stars can sometimes appear to be multiple by
+virtue of their proximity in the sky, these are not true multiples, in
+the same way the apparent double stars are not true binary stars.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Neutron_Star -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Neutron_Star">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Evolutionary_Endpoints"/>
+        <rdfs:comment>Definition: A neutron star results when a stellar core between about 1.4 and 2 or 3 solar masses, having consumed its nuclear fuel at the end of its life, explodes as a supernova , leaving behind a dense core squeezed so tightly it consists only of neutrons.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Normal -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Normal">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy"/>
+        <rdfs:comment>Definition: normal galaxies have a supermassive black hole at their center
+
+Source: https://imagine.gsfc.nasa.gov/science/objects/active_galaxies1.html#:~:text=Most%2C%20if%20not%20all%2C%20normal,and%20form%20into%20a%20disk.
+
+Justification: Classification based on morphology of the galaxy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Nova_Remnant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Nova_Remnant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: A nova is a close binary star (S 31) usually consisting of a white
+dwarf (S 12) and a main sequence normal star, in which hydrogen
+from the normal star is accreted onto the white dwarf.
+A nova remnant,  still surrounds its parent stars
+and is thus a circumstellar object. While it might seem that a nova
+and a supernova should both have class status at the same taxon
+level, they are in fact two very different phenomena, with a supernova
+white dwarf exploding and being destroyed while a nova
+white dwarf repeatedly erupts over a period of time.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Novae -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Novae">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Involving_Stars"/>
+        <rdfs:comment>Definition: A nova (plural novae or novas) is a transient astronomical event that causes the sudden appearance of a bright, apparently &quot;new&quot; star that slowly fades over weeks or months.</rdfs:comment>
+        <rdfs:label xml:lang="en">Novae</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Novae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Observational -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Observational">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Earth_Instrument"/>
+        <rdfs:comment>Definition: instruments that are used for observation. Observational astronomical instruments can be used to determine the size and structure of a celestial object.
+
+Source: https://www.allthescience.org/what-are-the-different-types-of-astronomical-instruments.htm
+
+Justification: Classification based on the scope of use</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Oort_Cloud -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Oort_Cloud">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Trans-Neptunian_Systems"/>
+        <rdfs:comment>Definition: The Oort cloud, occasionally called the Öpik-Oort cloud, is a
+spherical reservoir of trans-Neptunian objects surrounding
+the Solar System. If the Kuiper belt is the Solar System’s
+“third zone” beyond the terrestrial and gas giants, the Oort cloud
+is its fourth zone, and the one containing most of its objects.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Open_Cluster -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Open_Cluster">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+        <rdfs:comment>Definition: An open cluster (also known as a galactic cluster) is a group of hundreds to thousands of stars formed in the same molecular cloud
+(S 25) and still loosely bound gravitationally.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Outer_Space -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Outer_Space">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Instruments"/>
+        <rdfs:comment>Definition: Artifical Objects in outer space
+
+Justification: Classification based on the orbital state, especially  if it is a controlled or uncontrolled orbit
+
+Note:
+Prefixes in this classificaiton are the Initial letter of its superclasses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Photometric -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Photometric">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Binary"/>
+        <rdfs:comment>Definition: distinguished by light variations
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Planet -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Planet">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+        <rdfs:comment>Definition: A planet is a large, rounded astronomical body that is neither a star nor its remnant.
+
+Source: https://en.wikipedia.org/wiki/Planet
+
+Justification: Classification based on its constituents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Planet_Radiation_Belt -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Planet_Radiation_Belt">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumplanetary"/>
+        <rdfs:comment>Definition: A planetary radiation belt is a reservoir of energetic charged particles surrounding a planet and trapped in the magnetosphere created by the planet’s internally generated magnetic field.
+
+Source: Classifying the cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Planetary_Nebula -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Planetary_Nebula">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: A planetary nebula represents one of the steps on the way to the
+evolutionary endpoint of a low-mass star like the Sun. It occurs
+when the dying star, having expanded to a red giant, ejects its outer
+envelope.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Planetary_Ring -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Planetary_Ring">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumplanetary"/>
+        <rdfs:comment>Defintion: Planetary rings consist of particle- to house-sized objects orbiting
+a planet, forming one of the great spectacles of the Solar System.
+
+Source: Classifying the cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Planetary_Systems -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Planetary_Systems">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Systems"/>
+        <rdfs:comment>Definition: A system composed of planets. Because of their mechanism of formation, planets tend to exist in systems, each bound to its central star. A planetary system consists not only of the planets themselves but also everything associated with them.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Plantetary_Satellite -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Plantetary_Satellite">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumplanetary"/>
+        <rdfs:comment>Definition: The term “natural satellite” most commonly refers to a body such
+as the Moon orbiting a planet, but it also applies to bodies orbiting
+minor planets, dwarf planets, and Kuiper belt objects.
+
+Source: Classifying the cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Population -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Population">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+        <rdfs:comment>Definition: Like the citizens of countries, stars may be divided into broad
+“populations” based on location. Unlike citizens, however, stellar
+populations are often highly correlated with age and chemical
+composition.
+
+Justification: Classification based on age of the stars.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Population_I -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Population_I">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Population"/>
+        <rdfs:comment>Definition: Population I stars are the youngest</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Population_II -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Population_II">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Population"/>
+        <rdfs:comment>Definition: Population II are intermediate in age</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Population_III -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Population_III">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Population"/>
+        <rdfs:comment>Definition: Population III are the oldest</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Post-Main_Sequence -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Post-Main_Sequence">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star"/>
+        <rdfs:comment>Definition: A post-main-sequence star is a star that has been through a main-sequence phase (the primary, lengthy phase of hydrogen-burning fusion in the center, i.e., it is beyond TAMS, terminal-age main sequence) and is proceeding through additional phases, sometimes including fusion of various elements.
+
+Source: http://astro.vaporia.com/start/postmainsequencestar.html#:~:text=A%20post%2Dmain%2Dsequence%20star,including%20fusion%20of%20various%20elements.
+
+Justification:Classificaiton based on the absolute magnitude and size of the stars. 
+Absolute magnitude is defined as the brightness of stars if they were all
+observed from the same distance of 10 parsecs (32.6 light years).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Pre-Main_Sequence -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Pre-Main_Sequence">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Star"/>
+        <rdfs:comment>Definition: A pre-main-sequence star (also known as a PMS star and PMS object) is a star in the stage when it has not yet reached the main sequence. 
+
+Source: https://en.wikipedia.org/wiki/Pre-main-sequence_star
+
+Justification: Classification based on the mass.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Protogalactic -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Protogalactic">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+        <rdfs:comment>Definition: Like protoplanets (P 1) and protostars (S 1), galaxies must be born.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Protogalaxy -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Protogalaxy">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Protogalactic"/>
+        <rdfs:comment>Definition: The earliest galaxies existed at least 500 million years after
+the Big Bang, so in a technical sense these were the first protogalaxies.
+The definition of a protogalaxy is somewhat nebulous, so to speak.
+Given the uncertainties, an operational definition might be that a protogalaxy ends and a galaxy begins when stars light up the galaxy, and the wind from star formation and supernovae, as well as black hole accretion, exceeds the gravity
+of the host galaxy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Protoplanetary -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Protoplanetary">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+        <rdfs:comment>Definition: All things must be born, and for planets birth begins with a protoplanetary disk, a circumstellar disk of gas and dust that originates
+during star formation, when a protostar condenses out of a
+molecular cloud.
+
+Source: Classifying the Cosmos - How we can make sense of the celestial landscape
+
+Justification: Hubble Space Telescope observations first proved the existence
+of protoplanetary objects in the form of proplyds. Hence only one subclass.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Protostar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Protostar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Protostellar"/>
+        <rdfs:comment>Definition: A protostar, sometimes called an embryonic star, is a
+molecular cloud (S 25) undergoing gravitational contraction and
+accretion of gas and dust prior to initiating fusion reactions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Protostellar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Protostellar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        <rdfs:comment>Definition: Like planets, stars are born, but they do so in considerably more
+spectacular fashion and at rates highly dependent on their environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Quasar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Quasar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Active"/>
+        <rdfs:comment>Definitions: Quasars are now known to be the cores of extremely distant active galaxies, the most luminous of all classes of active galaxies discovered before or since, including Seyferts (G 6), radio galaxies (G 7), and blazars (G 9).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Radio_Galaxy -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Radio_Galaxy">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Active"/>
+        <rdfs:comment>Definition: Unlike Seyferts with their intense optical emission, radio
+galaxies exhibit intense radio emission. They are almost always
+large elliptical galaxies, by contrast to the Seyfert class, which are
+normally spirals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Recording -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Recording">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Earth_Instrument"/>
+        <rdfs:comment>Definition: Instruments used to record data
+
+Justification: Classification based on scope of use</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Reflection_Nebulae -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Reflection_Nebulae">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Dust"/>
+        <rdfs:comment>Definition: Reflection nebulae are clouds of dust that do not shine by their
+own light, but by light reflected from a nearby star
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Reflective -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Reflective">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Telescope"/>
+        <rdfs:comment>Definition: A reflecting telescope (also called a reflector) is a telescope that uses a single or a combination of curved mirrors that reflect light and form an image.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Refracting -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Refracting">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Telescope"/>
+        <rdfs:comment>Definition: A refracting telescope (also called a refractor) is a type of optical telescope that uses a lens as its objective to form an image (also referred to a dioptric telescope).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Regular_Cluster -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Regular_Cluster">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Cluster"/>
+        <rdfs:comment>Definition: Regular clusters have a spherical structure and concentrated core and appear to be populated mainly by elliptical galaxies</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Resonant_KBOs -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Resonant_KBOs">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kuiper_Belt"/>
+        <rdfs:comment>Definition: Trapped in 2:3 resonance with Neptune (2 orbits
+for every 3 of Neptune), have semi-major axes at about 39.4
+AUs.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/S_Dust -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/S_Dust">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Interstellar_Medium"/>
+        <rdfs:comment>Definition: Dust is made of fine particles of solid matter.
+
+Source: https://en.wikipedia.org/wiki/Dust
+
+Justification: Classification based on their interaction with light.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/S_Energetic_Particles -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/S_Energetic_Particles">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Interstellar_Medium"/>
+        <rdfs:comment>Definition: In the physical sciences, a particle (or corpuscule in older texts) is a small localized object to which can be ascribed several physical or chemical properties, such as volume, density, or mass.
+
+Source: https://en.wikipedia.org/wiki/Particle#:~:text=In%20the%20physical%20sciences%2C%20a,volume%2C%20density%2C%20or%20mass.
+
+Justification: Classification based on where they originate from.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/S_Gas -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/S_Gas">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Interstellar_Medium"/>
+        <rdfs:comment>Definition: a fluid (such as air) that has neither independent shape nor volume but tends to expand indefinitely.
+
+Source: Classifying the Cosmos (Book)
+
+Justification: Classification based on the constituents of gas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Scattered_KBOs -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Scattered_KBOs">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kuiper_Belt"/>
+        <rdfs:comment>Definition: with large eccentricities and perihelia near 35
+AU, are thought to originate from Neptune scattering.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Seyfert -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Seyfert">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Active"/>
+        <rdfs:comment>Definition: Astronomer Carl Keenan Seyfert (1911–1960) defined as a
+class what came to be called “Seyferts” in 1943, based on a galaxy’s
+bright optical nuclei, or more specifically on “high excitation
+nuclear emission lines superposed on a normal G-type spectrum,”
+that is to say, superimposed on a solar-type spectrum.
+
+Justification: Classification based on the strengths and widths of their emission lines.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Shell -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Shell">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: In addition to circumstellar proplyds and debris disks,
+material may exist around a star totally unrelated to planetary formation.
+Whereas proplyds by definition surround young stars, and
+debris disks such as our own Kuiper belt may linger well past
+stellar middle age, circumstellar shells (also called circumstellar
+envelopes) are related to mass loss late in stellar evolution, via
+stellar winds.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Single_Objects -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Single_Objects">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Solar"/>
+        <rdfs:comment>Definition: Astronomical phenomenas within our solar system involving a single object.
+
+Justifiction: Classification based on the objects involved.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Small_Bodies_of_Solar_System -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Small_Bodies_of_Solar_System">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Subplanetary"/>
+        <rdfs:comment>Definition: Other smaller bodies in the Solar System
+
+Justification: Classification based on the size of the object in comparison to each other.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Solar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Solar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Astronomical_Phenomena"/>
+        <rdfs:comment>Definition: Phenomena that occur within the Solar System.
+
+Justification: Classification based on the number of objects involved in the event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Solar_Eclipse -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Solar_Eclipse">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Ecplise"/>
+        <rdfs:comment>Definition: A lunar eclipse occurs when Earth comes between the Sun and the Moon and blocks the Sun&apos;s rays from directly reaching the Moon.</rdfs:comment>
+        <rdfs:label xml:lang="en">Solar Eclipse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Solar_Storm -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Solar_Storm">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Single_Objects"/>
+        <rdfs:comment>Definition: A solar storm is a disturbance on the Sun, which can emanate outward across the heliosphere, affecting the entire Solar System, including Earth and its magnetosphere, and is the cause of space weather in the short-term with long-term patterns comprising space climate.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Solar_Wind -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Solar_Wind">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Energetic_Particles"/>
+        <rdfs:comment>Definition: The Sun sends matter as well as light into space. This
+“solar wind” consists of a stream of charged particles, primarily
+electrons and protons, ejected from the Sun at speeds of 200 to 600
+miles per second, about a million miles per hour.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Spectrograph -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Spectrograph">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definition: A vital instrument of observational astronomy is the spectrograph. The absorption of specific wavelengths of light by elements allows specific properties of distant bodies to be observed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Spectroscopic -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Spectroscopic">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Binary"/>
+        <rdfs:comment>Definition: distinguished by spectral line shifts due to the stars’ mutual motions
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Spiral -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Spiral">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Normal"/>
+        <rdfs:comment>Definitions: Spiral galaxies are gravitationally bound conglomerations of stars
+characterized by complex structure, including flat disks, central
+bulges, and spiral arms wound with various degrees of tightness.
+The spiral arms are active regions of star formation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Star -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Star">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        <rdfs:comment>Definition: A star is an astronomical object comprising a luminous spheroid of plasma held together by its gravity. The nearest star to Earth is the Sun.
+
+Source: https://en.wikipedia.org/wiki/Star
+
+Justification: Classification based on the difference stages at which the star currently is.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Star_Systems -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Star_Systems">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        <rdfs:comment>Definition: A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.
+
+Source: https://en.wikipedia.org/wiki/System
+
+Justification: Classification based on the amount of stars present in the system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Stellar_Black_Hole -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Black_Hole">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Black_Hole"/>
+        <rdfs:comment>Definition: up to tens of  times more massive than the Sun, found, for example, in X-ray binaries, S 31
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Stellar_Jet -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Jet">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+        <rdfs:comment>Definition: Stellar jets are energetic matter and radiation ejected from stars
+accreting matter, either at star birth or star death and under certain
+other exotic circumstances such as cataclysmic variables and
+X-ray binaries.
+Jets associated with star formation consist of materials
+blasted away from a protostar (S 1), a disk of gas and dust falling
+into an embryonic star.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Stellar_Occultation -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Occultation">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Multiple_Objects"/>
+        <rdfs:comment>Definition: A stellar occultation occurs when, as viewed from Earth, a bright star passes behind a planetary ring system. These events occur rarely, typically last for hours, and can yield data on the location of ring features that rival spacecraft resolutions.
+
+Source: https://www.sciencedirect.com/topics/earth-and-planetary-sciences/stellar-occultation#:~:text=A%20stellar%20occultation%20occurs%20when,features%20that%20rival%20spacecraft%20resolutions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stellar Occultation</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Stellar_Occultation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Stellar_Wind -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Wind">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Energetic_Particles"/>
+        <rdfs:comment>Definition: Just as our Sun emits a solar wind consisting of charged
+particles from its upper atmosphere, so do a wide variety of other
+stars. In fact, all stars are believed to have stellar winds of one
+kind or another, including exotic specimens such as white dwarfs.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Subdwarf -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Subdwarf">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Main_Sequence"/>
+        <rdfs:comment>Definition: Subdwarfs, today more accurately known as “cool subdwarfs,” are
+an odd type of star that run about one magnitude below the main
+sequence in the Hertzsprung-Russell diagram (Fig. 8.2). They are
+usually classed as main sequence stars since they are hydrogen
+burning, although near the end of this phase of energy generation.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Subgalactic -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Subgalactic">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+        <rdfs:comment>Definition: The term “subgalactic” is most often used in astronomical literature
+in connection with protogalaxies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Subgalactic_Object -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Subgalactic_Object">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Subgalactic"/>
+        <rdfs:comment>Definition: subgalactic objects are the building blocks of galaxies as part of the “hierarchical clustering” process in the cold dark matter (CDM) theory.
+In theory, subgalactic objects could also be failed galaxies, analogous
+to the failed stars known as brown dwarfs (S 22) in the substellar
+Family (Chapter 10), or they could be remnants of galaxy
+formation analogous to dwarf planets (P 9) and the small bodies
+of the solar system (P 11, 12, and 13) in the subplanetary Family
+(Chapter 4).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Subgiant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Subgiant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Post-Main_Sequence"/>
+        <rdfs:comment>Definition: The subgiants, a class of stars that represents an intermediate
+stage in low-mass stellar evolution, between main sequence dwarfs
+and giant stars in the HR diagram. 
+Subgiants, up to ten times the size of the Sun, have begun
+their expansion into red giants, which can grow up to 100 times
+the size of the Sun. 
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Subplanetary -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Subplanetary">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+        <rdfs:comment>Definition: Describing bodies smaller than a planet
+
+Source: https://www.definitions.net/definition/subplanetary
+
+Justification: Classification based on the formation of the object and size.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Substellar -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Substellar">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        <rdfs:comment>Definition: having less mass than a star : not having the mass required to sustain nuclear fission
+
+Source: https://www.merriam-webster.com/dictionary/substellar
+
+Justification: Classification based on Mass.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Supergiant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Supergiant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Post-Main_Sequence"/>
+        <rdfs:comment>Definition: If giants like Arcturus and Aldebaran seem big, supergiants are
+even bigger, with 10 to 70 solar masses, radii up to 1,000 times
+the Sun’s, and luminosities hundreds of thousands of times the
+Sun’s (Fig. 8.8). They are the result of the evolution of high-mass
+stars—those greater than eight solar masses.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Supermassive_Black_Hole -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Supermassive_Black_Hole">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Black_Hole"/>
+        <rdfs:comment>Definition: located at the centers of galaxies (millions to billions of times the mass of the Sun)
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Systems -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Systems">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+        <rdfs:comment>Definition: A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole.
+
+Source: https://en.wikipedia.org/wiki/System
+
+Justification: Classification based on the members of the system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Syzygy -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Syzygy">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Multiple_Objects"/>
+        <rdfs:comment>Definition: In astronomy, a syzygy is a roughly straight-line configuration of three or more celestial bodies in a gravitational system.
+
+Source: https://en.wikipedia.org/wiki/Syzygy_(astronomy)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/T-Tauri -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/T-Tauri">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Pre-Main_Sequence"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Herbig_Ae/Herbig_Ae/Herbig_Ae_Be"/>
+        <rdfs:comment>Definition: T Tauri stars represent a very early stage in the history of a low-mass
+star, when the protostar  emerges from the surrounding
+molecular cloud, but before sustained core hydrogen burning
+on the main sequence of the Hertzsprung-Russell diagram.
+
+Source: Classifying the Cosmos (Book)
+
+Justification: Classification based on presence of Nebulous disk.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Telescope -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Telescope">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Observational"/>
+        <rdfs:comment>Definition:A telescope is an optical instrument using lenses, curved mirrors, or a combination of both to observe distant objects, or various devices used to observe distant objects by their emission, absorption, or reflection of electromagnetic radiation.
+ 
+Justification: Classification based on how they employ lenses or mirrors in order to capture light</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Trans-Neptunian_Objects -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Trans-Neptunian_Objects">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Small_Bodies_of_Solar_System"/>
+        <rdfs:comment>Definition: While minor planets and comets mostly orbit the Sun
+closer than Neptune, many even larger objects, and with somewhat
+different physical characteristics, orbit beyond Neptune.
+Such bodies are quite logically termed trans-Neptunian objects, or
+TNOs for short, and are likely remnants from the accretion process
+in protoplanetary disks during the early Solar System.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Trans-Neptunian_Systems -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Trans-Neptunian_Systems">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Systems"/>
+        <rdfs:comment>Definitions: A system composed of Trans-Neptunian Objects. 
+
+Source: Classifying the Cosmos (Book)
+
+Justification: Classification based on the location of the object wrt the Sun.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Transit -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Transit">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Multiple_Objects"/>
+        <rdfs:comment>Definition: In astronomy, a transit (or astronomical transit) is a phenomenon when a celestial body passes directly between a larger body and the observer. As viewed from a particular vantage point, the transiting body appears to move across the face of the larger body, covering a small portion of it.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transit</rdfs:label>
+        <rdfs:label xml:lang="iri-based">Transit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Type_I -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Type_I">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/supernova"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Type_II"/>
+        <rdfs:comment>Definition: star accumulates matter from a nearby neighbor until a runaway nuclear reaction ignites.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Type_II -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Type_II">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/supernova"/>
+        <rdfs:comment>Definition: star runs out of nuclear fuel and collapses under its own gravity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USFR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USFR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/USF_Regular_Convex"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/USFR_Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USFR_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USFR_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/USF_Regular_Convex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USF_Regular_Convex -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USF_Regular_Convex">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/US_Few_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior know and is convex.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USMR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USMR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/USM_Regular"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/USMR_Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USMR_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USMR_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/USM_Regular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USM_Regular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USM_Regular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/US_Many_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior known with concavities.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USSR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USSR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/USS_Regular_Convex"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/USSR_Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USSR_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USSR_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/USS_Regular_Convex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/USS_Regular_Convex -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/USS_Regular_Convex">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/US_Single_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior know and is convex.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/US_Few_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/US_Few_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/U_Spinning"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/US_Single_Material"/>
+        <rdfs:comment>Definitions: Objects that are composed of few materail in between single and many.
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/US_Many_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/US_Many_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/U_Stable"/>
+        <rdfs:comment>Definition: Objects that are composed of multiple material. 
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/US_Single_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/US_Single_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/U_Spinning"/>
+        <rdfs:comment>Definition: Objects that are made up of single material.
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTFI_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTFI_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTF_Irregular"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTFI_Small"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTFI_Small -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTFI_Small">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTF_Irregular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTFR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTFR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTF_Regular_Convex"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTFR_Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTFR_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTFR_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTF_Regular_Convex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTF_Irregular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTF_Irregular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UT_Few_Material"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTF_Regular_Convex"/>
+        <rdfs:comment>Definition: Objects whose shape is irregular. 
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTF_Regular_Convex -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTF_Regular_Convex">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UT_Few_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior know and is convex.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTMR_Large -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTMR_Large">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTM_Regular"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTMR_Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTMR_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTMR_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTM_Regular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTM_Regular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTM_Regular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UT_Many_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior known with concavities.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTSI_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTSI_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTS_Irregular"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTSI_Small"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTSI_Small -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTSI_Small">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTS_Irregular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTSR_Medium -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTSR_Medium">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTS_Regular_Convex"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTSR_Small"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTSR_Small -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTSR_Small">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UTS_Regular_Convex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTS_Irregular -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTS_Irregular">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UT_Single_Material"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/UTS_Regular_Convex"/>
+        <rdfs:comment>Definition: Objects whose shape is irregular. 
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UTS_Regular_Convex -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UTS_Regular_Convex">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UT_Single_Material"/>
+        <rdfs:comment>Definition: Objects whose shape is prior know and is convex.
+
+Justification: Classification based on the size of the object. The size is distinguished in three different kinds, small, which is below 10cm, medium, which is between 10cm and 1.5 meter and larger than 1.5 meter in diameter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UT_Few_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UT_Few_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/U_Tumbling"/>
+        <rdfs:comment>Definitions: Objects that are composed of few materail in between single and many. 
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UT_Many_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UT_Many_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/U_Tumbling"/>
+        <rdfs:comment>Definition: Objects that are composed of multiple material. 
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UT_Single_Material -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UT_Single_Material">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/U_Tumbling"/>
+        <rdfs:comment>Definition: Objects that are made up of single material.
+
+Justification: Classification based on the shape of the object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/U_Spinning -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/U_Spinning">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UnControlled_Orbit"/>
+        <rdfs:comment>Definition: Objects that are spinning moderately around one axis.
+
+Justification: Classification based on the number of material used to build the instrument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/U_Stable -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/U_Stable">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UnControlled_Orbit"/>
+        <rdfs:comment>Definition: Objects that are stationary
+
+Justification: Classification based on the number of material used to build the instrument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/U_Tumbling -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/U_Tumbling">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/UnControlled_Orbit"/>
+        <rdfs:comment>Definition: Objects that are spinning in irregular manner.
+
+Justification: Classification based on the number of material used to build the instrument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Ultracompact_dwarfs -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Ultracompact_dwarfs">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Low_Luminosity"/>
+        <rdfs:comment>Definition: has radii as small as 30 light years and has comparatively low surface brightness.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/UnControlled_Orbit -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/UnControlled_Orbit">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Outer_Space"/>
+        <rdfs:comment>Definition: Objects whose movement around orbit is not controlled. 
+
+Source: https://amostech.com/TechnicalPapers/2013/Orbital_Debris/JAH.pdf
+
+Justification: Classification is based on the attitude state, i.e, how the attiute of the object is evolving ober time, is it actively stabilized. naturally stable, spinning mderately around one axis or spinning in irregular manner.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Visual -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Visual">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Binary"/>
+        <rdfs:comment>Definition: distinctly seen with the naked eye through the telescope
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Warm_Hot_IGM -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Warm_Hot_IGM">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/G_Gas"/>
+        <rdfs:comment>Definition:The warm–hot intergalactic medium (WHIM) is the sparse, warm-to-hot (105 to 107 K) plasma that cosmologists believe to exist in the spaces between galaxies and to contain 40–50% of the baryonic &apos;normal matter&apos; in the universe at the current epoch.
+
+Source: https://en.wikipedia.org/wiki/Warm%E2%80%93hot_intergalactic_medium</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Weak_T_Tauri_stars -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Weak_T_Tauri_stars">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/T-Tauri"/>
+        <rdfs:comment>Definition: Stars that have almost completely lost
+their nebulous disk, perhaps because planetesimals—the building
+blocks of planets—have formed in the protoplanetary disk
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/White_Dwarf -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/White_Dwarf">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Evolutionary_Endpoints"/>
+        <rdfs:comment>Definition: A white dwarf is the final stage in the evolution of a star whose
+core is less than 1.4 solar masses. 
+The original progenitor star may have been as much as 10
+solar masses before shedding most of its mass. After burning its
+core hydrogen through nuclear fusion, a lower main sequence star
+such as our Sun will become a helium-burning red giant (S 7, S
+8), producing carbon and oxygen.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/White_Dwarf_Supernova_Remnant -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/White_Dwarf_Supernova_Remnant">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/S_Gas"/>
+        <rdfs:comment>Definition: a white dwarf supernova remnant (Type Ia
+in astronomical lingo) results from accretion of material onto a
+white dwarf at the Chandrasekhar limit, and its explosion normally
+leaves no star behind, or a star in the process of being ejected
+from its system. 
+White dwarf supernovae remnants show no hydrogen or helium
+lines; some show emission lines from the iron group in their later
+phases.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/With_Neuclear_core -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/With_Neuclear_core">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/High_Luminosity"/>
+        <owl:disjointWith rdf:resource="http://visualdataweb.org/SpaceScience/Without_Neuclear_core"/>
+        <rdfs:comment>Definition: Has a neuclear core and are most luminous.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Without_Neuclear_core -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Without_Neuclear_core">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/High_Luminosity"/>
+        <rdfs:comment>Definition: Doesn&apos;t have a neuclear core.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/supernova -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/supernova">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Involving_Stars"/>
+        <rdfs:comment>Definition: A supernova is a powerful and luminous stellar explosion. This transient astronomical event occurs during the last evolutionary stages of a massive star or when a white dwarf is triggered into runaway nuclear fusion. 
+
+Source: https://en.wikipedia.org/wiki/Supernova
+
+Justification: Classification based on the manner in which it occurs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/G_Filaments_&amp;_Voids -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/G_Filaments_&amp;_Voids">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+        <rdfs:comment>Definition: The existence of structures larger than superclusters, on the scale
+of hundreds of millions to billions of light years, was not suspected until four decades ago, when large surveys of galaxy redshifts began to reveal the coherent large-scale structure of the universe.
+They constitute the “cosmic web” channeling intergalactic gas (G 14) into galaxies and clusters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Herbig_Ae/Herbig_Ae/Herbig_Ae_Be -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Herbig_Ae/Herbig_Ae/Herbig_Ae_Be">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Pre-Main_Sequence"/>
+        <rdfs:comment>Definition: Herbig Ae/Be stars, sometimes referred to as HAeBe stars, are higher mass than T Tauri stars. Their ages range from half a million to
+20 million years before the onset of hydrogen nuclear fusion.
+
+Source: Classifying the Cosmos (Book)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/SpaceScience/Proplyd(Disk) -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/SpaceScience/Proplyd(Disk)">
+        <rdfs:subClassOf rdf:resource="http://visualdataweb.org/SpaceScience/Protoplanetary"/>
+        <rdfs:comment>Definition: A proplyd, a syllabic abbreviation of an ionized protoplanetary disk, is an externally illuminated photoevaporating disk around a young star. 
+
+Source: https://en.wikipedia.org/wiki/Proplyd</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Advanced"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Early"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Intermediate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Association"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Binary"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Globular_Cluster"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Multiple_Star"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Open_Cluster"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Population"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Asteroid"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Comet"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Trans-Neptunian_Objects"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Asteroid_Groups"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Meteroid_streams"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Planetary_Systems"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Trans-Neptunian_Systems"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Astrometric"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Photometric"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Spectroscopic"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Visual"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Aurora"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Conjunction"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Ecplise"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Libration"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Meteor_Shower"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Multiple_Objects"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Single_Objects"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Solar_Storm"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Occultation"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Syzygy"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Transit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Blazar"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Quasar"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Radio_Galaxy"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Seyfert"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Bright_Giant"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Giant"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Hypergiant"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Subgiant"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Supergiant"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Circumgalactic"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Galaxy"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Galaxy_Systems"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Intergalactic_Medium"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Protogalactic"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Subgalactic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Circumplanetary"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Interplanetary_Medium"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Planet"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Protoplanetary"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Subplanetary"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Systems"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Circumstellar"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Interstellar_Medium"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Protostellar"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Star"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Star_Systems"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Substellar"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Classical_KBOs"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Resonant_KBOs"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Scattered_KBOs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Cool_Atomic_Cloud"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Hot_Ionized_Cloud"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Molecular_Cloud"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/White_Dwarf_Supernova_Remnant"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Core_Collapse_Supernova_Remnant"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Debris_disk"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Herbig-Haro_Object"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Nova_Remnant"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Planetary_Nebula"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Shell"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Jet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Dust"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Energetic_Particles"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Gas"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Dwarf_Planet"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Meteoroid"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Small_Bodies_of_Solar_System"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Earth_Instrument"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Observational"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Outer_Space"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Recording"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Elliptical"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Irregular_Cluster"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Lenticular"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Spiral"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Evolutionary_Endpoints"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Main_Sequence"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Post-Main_Sequence"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Pre-Main_Sequence"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/G_Binary"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/G_Cluster"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/G_Group"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/G_Interacting"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/G_Supercluster"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/G_Filaments_&amp;_Voids"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Halo"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Jet"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Galactic_Ring"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Galaxy_Merger"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Involving_Galaxies"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Involving_Stars"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Novae"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/supernova"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/High_Surface_Brightness"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Low_Surface_Brightness"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Ultracompact_dwarfs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Intermediate_Black_Hole"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Stellar_Black_Hole"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Supermassive_Black_Hole"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Kingdom_of_Galaxies"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Kingdom_of_Planets"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Kingdom_of_Stars"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Mirror_lens"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Reflective"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Refracting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Planet_Radiation_Belt"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Planetary_Ring"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Plantetary_Satellite"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Population_I"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Population_II"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/Population_III"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/S_Dust"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/S_Energetic_Particles"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/S_Gas"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/UT_Few_Material"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/UT_Many_Material"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/UT_Single_Material"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/U_Spinning"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/U_Stable"/>
+            <rdf:Description rdf:about="http://visualdataweb.org/SpaceScience/U_Tumbling"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
